@@ -1,49 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biswas | ML & Data Enthusiast</title>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
 <body>
-    <div class="container">
-      <header class="site-header">
-        <div class="top-bar">
-          <div class="logo-heading">
-            <h1><a href="/">Biswas | ML & Data Enthusiast</a></h1>
-            <link rel="stylesheet" href="/assets/css/custom.css">
-          </div>
-          <div class="top-right">
-            <nav class="common-links">
-              <a href="/about/">About</a>
-              <a href="/projects/">Projects</a>
-            </nav>
-            <div class="search-box">
-              <input type="text" placeholder="Search..." />
-            </div>
-          </div>
-        </div>
-      </header>
-  
-      <main class="content-area">
-        <aside class="sidebar sidebar-left">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/projects/">Projects</a></li>
-          </ul>
-        </aside>
-  
-        <section class="main-content">
-          
+  <div class="container">
 
-        </section>
-  
-        <aside class="sidebar sidebar-right">
-          <h3>Extras</h3>
-          <p>Promotion</p>
-          <p>Banners</p>
-          <p>Advertisements</p>
-        </aside>
-      </main>
-  
-      <footer class="site-footer">
-        <p>© 2025 Biswas | Contact: <a href="mailto:bniloy960@gmail.com">bniloy960@gmail.com</a></p>
-      </footer>
+<!-- Header -->
+<header class="site-header">
+  <nav class="mobile-nav">
+    <div class="mobile-nav-header">
+      <h2>Biswas</h2>
+      <button id="mobile-menu-toggle">☰</button>
     </div>
-  </body>
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a href="#" class="nav-link" data-target="about">About</a></li>
+      <li><a href="#" class="nav-link" data-target="projects">Projects</a></li>
+      <li><a href="#" class="nav-link" data-target="research">Research</a></li>
+    </ul>
+  </nav>
   
+  <div class="top-bar">
+    <div class="logo-heading">
+      <h1><a href="#">Biswas | ML & Data Enthusiast</a></h1>
+    </div>
+
+    <div class="top-right">
+      <div class="common-links-icons">
+        <a href="https://github.com/Niloy077" target="_blank" title="GitHub">
+          <img src="/assets/icons/github.svg" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/niloy-biswas-620b7b2a7/" target="_blank" title="LinkedIn">
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="mailto:bniloy960@gmail.com" title="Email">
+          <img src="/assets/icons/gmail.svg" alt="Gmail" />
+        </a>
+        <a href="https://www.facebook.com/Niloy.Biswas0077" target="_blank" title="Facebook">
+          <img src="/assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      <aside class="sidebar sidebar-left">
+        <div class="profile-section">
+          <div class="profile-image-container">
+            <img src="/assets/images/niloy.jpg" alt="Profile Image" />
+          </div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#" class="nav-link" data-target="about">About</a></li>
+          <li><a href="#" class="nav-link" data-target="projects">Projects</a></li>
+          <li><a href="#" class="nav-link" data-target="research">Research</a></li>
+        </ul>
+        </div>
+      </aside>
+    
+      <section class="main-content">
+        <div id="about" class="content-section" >
+          <h2>About Me</h2>
+          <p>This section contains info about me.</p>
+        </div>
+    
+        <div id="projects" class="content-section" style="display: none;">
+          <h2>My Projects</h2>
+          <p>Here are some of the projects I’ve worked on.</p>
+        </div>
+
+        <div id="research" class="content-section" style="display: none;">
+          <h2>Research</h2>
+          <p>Here are some of the projects I’ve worked on.</p>
+        </div>
+      </section>
+    
+      <aside class="sidebar sidebar-right">
+        <h3>Extras</h3>
+        <p>Promotion</p>
+        <p>Banners</p>
+        <p>Advertisements</p>
+      </aside>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© 2025 Biswas | Contact: <a href="mailto:bniloy960@gmail.com">bniloy960@gmail.com</a></p>
+    </footer>
+  </div>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
