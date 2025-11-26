@@ -30,7 +30,6 @@ github_username:  jekyll
 
 # Build settings
 theme: null
-remote_theme: ""
 
 stylesheets:
   - /assets/css/custom.css
