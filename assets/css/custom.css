@@ -1,9 +1,21 @@
+
+/* === Particle Background === */
+#particles-js {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  z-index: -1;
+}
 /* === General Reset & Container === */
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
-  background-color: #fefefe;
+  background: transparent;
   color: #333;
+  min-height: 100vh;
+
 }
 
 /* Hide mobile nav by default */
@@ -75,9 +87,9 @@ body {
 
 .profile-image-container img {
   width: 80%;
-  height: 100%;
+  height: 80%;
   border-radius: 50%;
-  border: 5px solid #2196f3; /* blue */
+  border: 1px solid #4f7b9f; /* blue */
   object-fit: cover;
 }
 
@@ -100,9 +112,15 @@ body {
 
 
 .container {
+  position: relative;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 3rem auto 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
 }
 
 /* === Header & Top Bar === */
