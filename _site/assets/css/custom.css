@@ -254,7 +254,7 @@ body {
 
 /* Hover interactions */
 .sidebar-left ul li a:hover {
-  background-color: #1abc9c;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #ffffff;
   transform: translateX(6px);
 }
