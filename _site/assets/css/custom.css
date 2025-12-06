@@ -201,31 +201,67 @@ body {
 .sidebar-left {
   position: sticky;
   top: 0;
+  padding: 1.5rem;
+  background: #f8fafc; /* soft light background */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
+/* Navigation header */
+.sidebar-left h3 {
+  color: #1e293b;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* List styling */
 .sidebar-left ul {
-  list-style: none; /* remove bullets */
+  list-style: none;
   padding-left: 0;
   margin-top: 1rem;
 }
 
 .sidebar-left li {
-  margin: 0.5rem 0;
-}
-.sidebar-left ul li a {
-  text-decoration: none;       /* remove underline */
-  color: #2c3e50;              /* dark text color */
-  font-weight: 500;
-  padding: 0.3rem 0.5rem;
-  display: inline-block;
-  border-radius: 5px;
-  transition: background 0.3s, color 0.3s, transform 0.2s;
+  margin: 0.7rem 0;
 }
 
+/* Links */
+.sidebar-left ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff;
+  border-radius: 8px;
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.25s ease;
+}
+
+/* Arrow style */
+.sidebar-left .arrow {
+  font-size: 1rem;
+  color: #64748b;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover interactions */
 .sidebar-left ul li a:hover {
-  background-color: #1abc9c;  /* subtle highlight */
-  color: white;               /* text turns white */
-  transform: translateX(5px); /* small slide effect */
+  background-color: #1abc9c;
+  color: #ffffff;
+  transform: translateX(6px);
+}
+
+.sidebar-left ul li a:hover .arrow {
+  color: #ffffff;
+  transform: translateX(4px); /* slide arrow right */
 }
 
 /* === Footer === */
