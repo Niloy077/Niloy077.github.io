@@ -4,28 +4,34 @@
 <head>
   <meta charset="UTF-8" />
   <title>Biswas | ML & Data Enthusiast</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- <link rel="preload" as="image" href="/assets/images/man.webp" fetchpriority="high" /> -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Preload hero image (optional) -->
+  <!--
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/man.webp"
+      fetchpriority="high"
+    />
+    -->
 </head>
 
 <body>
-
   <header class="navbar">
   <div class="logo">
     <a href="/">
-      <img src="/assets/images/niloy-logo.png" alt="Portfolio">
+      <img src="/assets/images/niloy-logo.png" alt="Portfolio" />
     </a>
   </div>
 
-
   <!-- Hamburger -->
-  <div class="menu-toggle" id="menu-toggle">
-    ☰
-  </div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
 
   <nav id="nav-menu">
     <a href="/">Home</a>
@@ -36,14 +42,13 @@
   </nav>
 
   <div class="socials">
-
-    <!-- Github -->
-    <a href="https://github.com/Niloy077" target="_blank" aria-label="LinkedIn">
+    <!-- GitHub -->
+    <a href="https://github.com/Niloy077" target="_blank" rel="noopener" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
 
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/niloy-biswas-620b7b2a7/" target="_blank" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/niloy-biswas-620b7b2a7/" target="_blank" rel="noopener" aria-label="LinkedIn">
       <i class="fab fa-linkedin"></i>
     </a>
 
@@ -56,101 +61,104 @@
     </div>
 
     <!-- WhatsApp -->
-    <a href="https://wa.me/8801824872011" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/8801824872011" target="_blank" rel="noopener" aria-label="WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
-
   </div>
 </header>
 
   <main>
     <section class="hero" id="home">
-
   <!-- MAIN HERO CONTENT (TEXT + IMAGE) -->
   <div class="hero-content">
     <div class="hero-text">
       <h1>NILOY BISWAS</h1>
+
       <p>
-        I focus on turning complex ideas into clean, working system that solves real-world problems.
+        I focus on turning complex ideas into clean, working systems that solve
+        real-world problems.
       </p>
 
-      <a href="#work-and-experience" class="btn">Explore my works →</a>
+      <a href="#work-and-experience" class="btn">
+        Explore my works →
+      </a>
 
       <div class="hero-designations">
-  <div class="designation-card">
-    <span class="designation-icon">💻</span>
-    <h3>Software Engineer</h3>
+        <div class="designation-card">
+          <span class="designation-icon">💻</span>
+          <h3>Software Engineer</h3>
+        </div>
+
+        <div class="designation-card">
+          <span class="designation-icon">⚙️</span>
+          <h3>ML Ops Engineer</h3>
+        </div>
+
+        <div class="designation-card">
+          <span class="designation-icon">📊</span>
+          <h3>Researcher</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Globe Canvas -->
+    <div class="hero-globe">
+      <canvas id="globe"></canvas>
+    </div>
   </div>
-
-  <div class="designation-card">
-    <span class="designation-icon">⚙️</span>
-    <h3>ML Ops Engineer</h3>
-  </div>
-
-  <div class="designation-card">
-    <span class="designation-icon">📊</span>
-    <h3>Researcher</h3>
-  </div>
-</div>
-
-      
-  </div>
-
-<!-- <div class="hero-img">
-</div> -->
-
-<div class="hero-globe">
-  <canvas id="globe"></canvas>
-</div>
-
-
-  </div>
-
-
-
 </section>
 
 <section class="projects" id="work-and-experience">
-<h2 id="work-experience">Work Experience</h2>
+  <h2 id="work-experience">Work Experience</h2>
 
   <div class="project-card scroll-target" id="skills">
     <div class="project-text">
       <h3>My Skills</h3>
-<p>
-  An overview of my technical skill set, including programming languages, frameworks, and development tools.
-</p>
+      <p>
+        An overview of my technical skill set, including programming languages,
+        frameworks, and development tools.
+      </p>
 
-      <a href="/skills/" class="outline-btn">View Skills</a>
+      <a href="/skills/" class="outline-btn">
+        View Skills
+      </a>
     </div>
-    <img src="/assets/images/site_image/skills.png" />
+
+    <img src="/assets/images/site_image/skills.png" alt="Skills overview" />
   </div>
 
-<div class="project-card reverse scroll-target" id="software-projects">
-  <div class="project-text">
-    <h3>Explore My Projects</h3>
-    <p>
-      A curated collection of my software engineering, web development, application, and machine learning projects.
-    </p>
-    <a href="/projects/" class="outline-btn">View Projects</a>
+  <div class="project-card reverse scroll-target" id="software-projects">
+    <div class="project-text">
+      <h3>Explore My Projects</h3>
+      <p>
+        A curated collection of my software engineering, web development,
+        application, and machine learning projects.
+      </p>
+
+      <a href="/projects/" class="outline-btn">
+        View Projects
+      </a>
+    </div>
+
+    <img src="/assets/images/site_image/projects.png" alt="Projects preview" />
   </div>
 
-  <img src="/assets/images/site_image/projects.png" />
-</div>
+  <div class="project-card scroll-target" id="research">
+    <div class="project-text">
+      <h3>Research</h3>
+      <p>
+        This page highlights an overview of my research projects and the
+        progress of my ongoing research work.
+      </p>
 
-<div class="project-card scroll-target" id="research">
-  <div class="project-text">
-    <h3>Research</h3>
-    <p>
-      This page highlights an overview of my research projects, and the progress of my ongoing research work.
-    </p>
-    <a href="/research/" class="outline-btn">View Research</a>
+      <a href="/research/" class="outline-btn">
+        View Research
+      </a>
+    </div>
+
+    <img src="/assets/images/site_image/research.png" alt="Research overview" />
   </div>
-
-  <img src="/assets/images/site_image/research.png" />
-</div>
-  
 </section>
-
 
   </main>
 
@@ -168,8 +176,8 @@
   
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="/assets/js/script.js" defer></script>
 
+  <script src="/assets/js/script.js" defer></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@ title: Skills
 
 <section class="page-hero">
   <img
-    src="/assets/images/site_image/skills.png"
+    src="{{ '/assets/images/site_image/skills.png' | relative_url }}"
     alt=""
     class="page-hero-bg"
     loading="eager"

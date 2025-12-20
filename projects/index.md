@@ -4,17 +4,19 @@ title: Projects
 ---
 
 <section class="page-hero">
-  <img                     
-    src="/assets/images/site_image/projects.png"
-    alt=""
+  <img
+    src="{{ '/assets/images/site_image/projects.png' | relative_url }}"
+    alt="Projects background"
     class="page-hero-bg"
     loading="eager"
     decoding="async"
   />
+
   <div class="page-hero-inner">
     <h1>Projects</h1>
     <p>
-      A curated collection of my software engineering, web development, application, and machine learning projects.
+      A curated collection of my software engineering, web development,
+      application, and machine learning projects.
     </p>
   </div>
 </section>
@@ -22,13 +24,15 @@ title: Projects
 <section class="work-list projects-page">
 
   <!-- =========================
-       DEVELOPMENT PROJECTS
+       SOFTWARE ENGINEERING PROJECTS
   ========================= -->
-  <h2 class="projects-section-title">Software Engineering Projects</h2>
+  <h2 class="projects-section-title">
+    Software Engineering Projects
+  </h2>
 
   <div class="projects-grid dev-projects">
 
-  <article class="work-card project-card">
+    <article class="work-card project-card">
       <h3>Prescription Generator</h3>
 
       <div class="tech-tags">
@@ -75,8 +79,7 @@ title: Projects
       </a>
     </article>
 
-
-  <article class="work-card project-card">
+    <article class="work-card project-card">
       <h3>Review Point</h3>
 
       <div class="tech-tags">
@@ -100,7 +103,7 @@ title: Projects
       </a>
     </article>
 
-  <article class="work-card project-card">
+    <article class="work-card project-card">
       <h3>ManagerFormFX</h3>
 
       <div class="tech-tags">
@@ -126,13 +129,15 @@ title: Projects
   </div>
 
   <!-- =========================
-       ML PROJECTS
+       MACHINE LEARNING PROJECTS
   ========================= -->
-  <h2 class="projects-section-title">Machine Learning Projects</h2>
+  <h2 class="projects-section-title">
+    Machine Learning Projects
+  </h2>
 
   <div class="projects-grid ml-projects">
 
-   <article class="work-card project-card">
+    <article class="work-card project-card">
       <h3>RegiPPI</h3>
 
       <div class="tech-tags">
@@ -156,7 +161,7 @@ title: Projects
       </a>
     </article>
 
-  <article class="work-card project-card">
+    <article class="work-card project-card">
       <h3>Image Feature Extraction</h3>
 
       <div class="tech-tags">
@@ -183,4 +188,3 @@ title: Projects
   </div>
 
 </section>
-
