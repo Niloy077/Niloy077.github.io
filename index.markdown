@@ -69,7 +69,7 @@ layout: default
 
       <a href="/skills/" class="outline-btn">View Skills</a>
     </div>
-    <img src="{{ '/assets/images/site_image/content-banner.avif' | relative_url }}">
+    <img src="{{ '/assets/images/site_image/skills.png' | relative_url }}">
   </div>
 
 <div class="project-card reverse scroll-target" id="software-projects">
@@ -81,7 +81,7 @@ layout: default
     <a href="/projects/" class="outline-btn">View Projects</a>
   </div>
 
-  <img src="{{ '/assets/images/site_image/copy-banner.png' | relative_url }}">
+  <img src="{{ '/assets/images/site_image/projects.png' | relative_url }}">
 </div>
 
 <div class="project-card scroll-target" id="research">
@@ -93,7 +93,7 @@ layout: default
     <a href="/research/" class="outline-btn">View Research</a>
   </div>
 
-  <img src="{{ '/assets/images/site_image/content-banner.avif' | relative_url }}">
+  <img src="{{ '/assets/images/site_image/research.png' | relative_url }}">
 </div>
   
 </section>

@@ -5,7 +5,7 @@ title: Projects
 
 <section class="page-hero">
   <img                     
-    src="/assets/images/site_image/content-banner.avif"
+    src="/assets/images/site_image/projects.png"
     alt=""
     class="page-hero-bg"
     loading="eager"
