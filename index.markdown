@@ -13,47 +13,38 @@ layout: default
       </p>
 
       <a href="#work-and-experience" class="btn">Explore my works →</a>
+
+      <div class="hero-designations">
+  <div class="designation-card">
+    <span class="designation-icon">💻</span>
+    <h3>Software Engineer</h3>
+  </div>
+
+  <div class="designation-card">
+    <span class="designation-icon">⚙️</span>
+    <h3>ML Ops Engineer</h3>
+  </div>
+
+  <div class="designation-card">
+    <span class="designation-icon">📊</span>
+    <h3>Researcher</h3>
+  </div>
+</div>
+
+      
   </div>
 
 <!-- <div class="hero-img">
-  <img
-  src="{{ '/assets/images/man.webp' | relative_url }}"
-  alt="Profile"
-  loading="eager"
-  fetchpriority="high"
-  decoding="async"
-  />
-
-  <div class="float-tag tag-mlops">
-    MLOps Engineer
-  </div>
-
-  <div class="float-tag tag-researcher">
-    Researcher
-  </div>
-
-  <div class="float-tag tag-developer">
-    Software Developer 
-  </div>
 </div> -->
 
 <div class="hero-globe">
   <canvas id="globe"></canvas>
-
-  <!-- optional center image -->
-  <!-- <img
-    class="globe-center"
-    src="{{ '/assets/images/man.webp' | relative_url }}"
-    alt="Profile"
-  /> -->
 </div>
+
 
   </div>
 
-  <!-- WORKED WITH (SEPARATE ROW, NO COLLISION) -->
-  <!-- <div class="worked-with">
-    <span class="worked-title">Worked for</span>
-  </div> -->
+
 
 </section>
 

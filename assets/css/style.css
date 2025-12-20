@@ -203,6 +203,7 @@ body {
 /* TEXT */
 .hero-text {
   max-width: 500px;
+  margin-top: 40px;
 }
 
 .hero-text h1 {
@@ -232,98 +233,55 @@ body {
   position: relative;
 }
 
-/* Base floating pill */
-.float-tag {
-  position: absolute;
-  padding: 10px 18px;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 999px;
-
-  background: #e8ebd4;
-  color: #111;
-
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  white-space: nowrap;
-
-  animation: floatY 6s ease-in-out infinite;
+.hero-designations {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
-/* Soft floating motion */
-@keyframes floatY {
-  0% {
-    transform: translateY(0);
-  }
+.designation-card {
+  min-width: 180px;
+  padding: 1rem 1.2rem;
 
-  50% {
-    transform: translateY(-12px);
-  }
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
 
-  100% {
-    transform: translateY(0);
-  }
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.hero-img img {
-  width: 300px;
-  height: 300px;
-  aspect-ratio: 1 / 1;
-  /* 🔑 locks space before load */
-  border-radius: 50%;
-  object-fit: cover;
+.designation-card:hover {
+  transform: translateY(-4px);
+  border-color: #4caf50;
+}
+
+.designation-icon {
   display: block;
-  /* opacity: 0;
-  animation: heroFade 0.15s ease forwards; */
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
-
-/* Left bottom */
-.tag-developer {
-  left: -150px;
-  bottom: 20px;
-  animation-delay: 0s;
+.designation-card h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.tag-developer::after {
-  right: -18px;
-  top: 50%;
-  transform: translateY(-120%) rotate(-15deg);
+/* Mobile stacking */
+@media (max-width: 768px) {
+  .hero-designations {
+    gap: 0.8rem;
+  }
+
+  .designation-card {
+    min-width: 100%;
+  }
 }
 
-/* Right middle */
-.tag-researcher {
-  right: -100px;
-  top: 55%;
-  animation-delay: 2s;
-}
-
-.tag-researcher::after {
-  left: -18px;
-  top: 50%;
-  transform: translateY(-50%) rotate(180deg);
-}
-
-/* Top left */
-.tag-mlops {
-  left: -100px;
-  top: 30px;
-  animation-delay: 4s;
-}
-
-.tag-mlops::after {
-  right: -18px;
-  top: 50%;
-  transform: translateY(-20%) rotate(360deg);
-}
-
-.float-tag::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #FF8C00;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-}
 
 /* =========================
    HERO GLOBE (replaces image)
