@@ -1320,6 +1320,10 @@ h3 {
 
   /* Remove all box-shadows that are decorative (cards, buttons, etc.) */
 
+  .hero-globe {
+    display: none;
+  }
+
   .project-card,
   .skills-content .skill-group,
   .work-card-image,
