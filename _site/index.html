@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Biswas | ML & Data Enthusiast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link
-  rel="preload"
-  as="image"
-  href="/assets/images/man.webp"
-  fetchpriority="high"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preload" as="image" href="/assets/images/man.webp" fetchpriority="high" />
 
 </head>
+
 <body>
 
-<header class="navbar">
+  <header class="navbar">
   <div class="logo">
-    <a href="/">Portfolio</a>
+    <a href="/">
+      <img src="/assets/images/niloy-logo.png" alt="Portfolio">
+    </a>
   </div>
+
 
   <!-- Hamburger -->
   <div class="menu-toggle" id="menu-toggle">
@@ -30,8 +30,7 @@
   <nav id="nav-menu">
     <a href="/">Home</a>
     <a href="/skills/">Skills</a>
-    <a href="/software-development/">Software Projects</a>
-    <a href="/machine-learning/">ML projects</a>
+    <a href="/projects/">Projects</a>
     <a href="/research/">Research</a>
     <a href="#contact" class="nav-contact">Contact</a>
   </nav>
@@ -39,16 +38,12 @@
   <div class="socials">
 
     <!-- Github -->
-    <a href="https://github.com/Niloy077"
-       target="_blank"
-       aria-label="LinkedIn">
+    <a href="https://github.com/Niloy077" target="_blank" aria-label="LinkedIn">
       <i class="fab fa-github"></i>
     </a>
 
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/niloy-biswas-620b7b2a7/"
-      target="_blank"
-      aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/niloy-biswas-620b7b2a7/" target="_blank" aria-label="LinkedIn">
       <i class="fab fa-linkedin"></i>
     </a>
 
@@ -61,32 +56,35 @@
     </div>
 
     <!-- WhatsApp -->
-    <a href="https://wa.me/8801824872011"
-       target="_blank"
-       aria-label="WhatsApp">
+    <a href="https://wa.me/8801824872011" target="_blank" aria-label="WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
 
   </div>
 </header>
 
-
-<main>
-  <section class="hero" id="home">
+  <main>
+    <section class="hero" id="home">
 
   <!-- MAIN HERO CONTENT (TEXT + IMAGE) -->
   <div class="hero-content">
     <div class="hero-text">
       <h1>NILOY BISWAS</h1>
       <p>
-        I focus on turning complex ideas into clean, working system that actually solves real-world problems.
+        I focus on turning complex ideas into clean, working system that solves real-world problems.
       </p>
 
       <a href="#work-and-experience" class="btn">Explore my works →</a>
   </div>
 
-<div class="hero-img">
-  <img src="/assets/images/man.webp" alt="Profile" loading="eager" fetchpriority="high" decoding="async" />
+<!-- <div class="hero-img">
+  <img
+  src="/assets/images/man.webp"
+  alt="Profile"
+  loading="eager"
+  fetchpriority="high"
+  decoding="async"
+  />
 
   <div class="float-tag tag-mlops">
     MLOps Engineer
@@ -99,50 +97,38 @@
   <div class="float-tag tag-developer">
     Software Developer 
   </div>
+</div> -->
+
+<div class="hero-globe">
+  <canvas id="globe"></canvas>
+
+  <!-- optional center image -->
+  <!-- <img
+    class="globe-center"
+    src="/assets/images/man.webp"
+    alt="Profile"
+  /> -->
 </div>
 
   </div>
 
   <!-- WORKED WITH (SEPARATE ROW, NO COLLISION) -->
-  <div class="worked-with">
+  <!-- <div class="worked-with">
     <span class="worked-title">Worked for</span>
-
-<div class="company-logos">
-  <a href="https://www.anker.com" target="_blank" class="company-box anker-logo">
-    <img src="/assets/images/companies/anker.png" alt="Anker" />
-  </a>
-
-  <a href="https://www.mi.com" target="_blank" class="company-box mi-logo">
-    <img src="/assets/images/companies/xiaomi.png" alt="Xiaomi" />
-  </a>
-
-  <a href="https://milkbymom.com" target="_blank" class="company-box company-box--square">
-    <img src="/assets/images/companies/milkbymom.png" alt="Milk by Mom" />
-  </a>
-
-  <a href="https://www.telenor.com" target="_blank" class="company-box telenor-logo">
-    <img src="/assets/images/companies/telenor.png" alt="Telenor" />
-  </a>
-
-  <a href="https://www.zhiyun-tech.com" target="_blank" class="company-box">
-    <img src="/assets/images/companies/zhiyun.webp" alt="Zhiyun" />
-  </a>
-</div>
-
-  </div>
+  </div> -->
 
 </section>
 
 <section class="projects" id="work-and-experience">
-<h2 id="work-experience">Work and Experience</h2>
+<h2 id="work-experience">Work Experience</h2>
 
   <div class="project-card scroll-target" id="skills">
     <div class="project-text">
       <h3>My Skills</h3>
-      <p>
-        I created this personal project to show how to create an interface
-        in Figma using a portfolio as an example.
-      </p>
+<p>
+  An overview of my technical skill set, including programming languages, frameworks, and development tools.
+</p>
+
       <a href="/skills/" class="outline-btn">View Skills</a>
     </div>
     <img src="/assets/images/site_image/content-banner.avif" />
@@ -150,47 +136,34 @@
 
 <div class="project-card reverse scroll-target" id="software-projects">
   <div class="project-text">
-    <h3>Software Development Projects</h3>
+    <h3>Explore My Projects</h3>
     <p>
-      What was your role, your deliverables, if the project was personal
-      or freelancing.
+      A curated collection of my software engineering, web development, application, and machine learning projects.
     </p>
-    <a href="/software-development/" class="outline-btn">View Projects</a>
+    <a href="/projects/" class="outline-btn">View Projects</a>
   </div>
 
   <img src="/assets/images/site_image/copy-banner.png" />
 </div>
 
-  <div class="project-card scroll-target" id="ml-projects">
-    <div class="project-text">
-      <h3>Machine Learning Projects</h3>
-      <p>
-        You can also add in this description the type of the project.
-      </p>
-      <a href="/machine-learning/" class="outline-btn">View Projects</a>
-    </div>
-    <img src="/assets/images/site_image/social.jpg" />
-  </div>
-
-<div class="project-card reverse scroll-target" id="research">
+<div class="project-card scroll-target" id="research">
   <div class="project-text">
     <h3>Research</h3>
     <p>
-      What was your role, your deliverables, if the project was personal
-      or freelancing.
+      This page highlights an overview of my research projects, and the progress of my ongoing research work.
     </p>
     <a href="/research/" class="outline-btn">View Research</a>
   </div>
 
-  <img src="/assets/images/site_image/copy-banner.png" />
+  <img src="/assets/images/site_image/content-banner.avif" />
 </div>
   
 </section>
 
 
-</main>
+  </main>
 
-<footer class="footer" id="contact">
+  <footer class="footer" id="contact">
     <h2>Have a project idea in mind?</h2>
     <h3>Let's Discuss It.</h3>
     <p>Gmail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niloybiswas0100@gmail.com"
@@ -203,6 +176,9 @@
   </footer>
   
 
-<script src="/assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/assets/js/script.js" defer></script>
+
 </body>
+
 </html>

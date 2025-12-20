@@ -3,8 +3,8 @@ layout: default
 title: Research
 ---
 
-<section class="page-hero section-research">
-  <img
+<section class="page-hero">
+  <img                     
     src="/assets/images/site_image/content-banner.avif"
     alt=""
     class="page-hero-bg"
@@ -14,7 +14,8 @@ title: Research
   <div class="page-hero-inner">
     <h1>Research</h1>
     <p>
-      Currently conducting research on protein protein interaction.
+      This page highlights an overview of my research projects,
+      and the progress of my ongoing research work.
     </p>
   </div>
 </section>
@@ -27,11 +28,37 @@ title: Research
       <span class="live-indicator"></span> Ongoing | Undergrad Thesis
     </span>
 
-    <h3>Protein folding</h3>
+    <h3>Residue-Level Protein Structure Modeling</h3>
 
     <p>
-      Currently conducting research on protein protein interaction.
+      I am currently researching on protein–protein interaction problem, with an emphasis on integrating machine learning techniques to develop predictive models at the sequence and residue levels, using both structural and
+      learned representations of proteins.
     </p>
+
+    <!-- ✅ SUPERVISORS INSIDE ARTICLE -->
+    <div class="supervisor-section">
+      <span class="supervisor-title">Supervisors</span>
+
+      <div class="supervisors">
+        <a
+          href="https://scholar.google.com/citations?user=sGVZEaAAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener"
+          class="supervisor-box"
+        >
+          Dr. Sifat Momen
+        </a>
+
+        <a
+          href="https://scholar.google.com/citations?user=0L8DEpEAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener"
+          class="supervisor-box"
+        >
+          Farhan Quadir
+        </a>
+      </div>
+    </div>
   </div>
 
   <img
@@ -40,6 +67,7 @@ title: Research
     class="work-card-image"
   />
 </article>
+
 
 
 </section>
