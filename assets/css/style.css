@@ -1312,3 +1312,55 @@ h3 {
     align-items: flex-start;
   }
 }
+
+/* =========================
+   DISABLE HOVER EFFECTS & SHADOWS ON PHONES
+   ========================= */
+@media (max-width: 767px) and (hover: none) {
+
+  /* Remove all box-shadows that are decorative (cards, buttons, etc.) */
+
+  .hero-globe {
+    display: none;
+  }
+
+  .project-card,
+  .skills-content .skill-group,
+  .work-card-image,
+  .live-indicator {
+    box-shadow: none !important;
+  }
+
+  /* Disable hover-specific shadows/glows */
+  .dev-projects .project-card:hover,
+  .ml-projects .project-card:hover,
+  .skills-content .skill-group:hover {
+    box-shadow: none !important;
+  }
+
+  /* Disable transform lifts on hover */
+  .designation-card:hover,
+  .socials a:hover {
+    transform: none !important;
+  }
+
+  /* Remove border color change on designation cards */
+  .designation-card:hover {
+    border-color: initial !important;
+  }
+
+  /* Disable backdrop-filter (performance + visual noise on mobile) */
+  .designation-card {
+    backdrop-filter: none !important;
+  }
+
+  /* Stop subtle animations that only make sense on hover/pointer devices */
+  .nav-contact::before {
+    animation: none !important;
+  }
+
+  /* Stop live indicator ripple (saves CPU) */
+  .live-indicator::before {
+    animation: none !important;
+  }
+}
