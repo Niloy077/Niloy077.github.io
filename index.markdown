@@ -19,17 +19,22 @@ layout: default
 
       <div class="hero-designations">
         <div class="designation-card">
-          <span class="designation-icon">💻</span>
+          <span class="designation-icon"></span>
           <h3>Software Engineer</h3>
         </div>
 
         <div class="designation-card">
-          <span class="designation-icon">⚙️</span>
-          <h3>ML Ops Engineer</h3>
+          <span class="designation-icon"></span>
+          <h3>ML Ops Enthusiast</h3>
         </div>
 
         <div class="designation-card">
-          <span class="designation-icon">📊</span>
+          <span class="designation-icon"></span>
+          <h3>Web Developer</h3>
+        </div>
+
+        <div class="designation-card">
+          <span class="designation-icon"></span>
           <h3>Researcher</h3>
         </div>
       </div>
