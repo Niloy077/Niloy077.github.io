@@ -3,8 +3,9 @@
 # =========================
 
 title: Niloy Biswas
-email: niloybiswas0100@gmail.com
-description: Portfolio of Niloy Biswas.
+description: >
+  Portfolio of Niloy Biswas – Software Engineer focused on
+  Machine Learning, ML Ops, and Research.
 url: "https://niloy077.github.io"
 baseurl: ""
 
@@ -14,13 +15,23 @@ baseurl: ""
 
 theme: null
 
-# Disable blog features completely
-plugins: []
 
 # =========================
 # MARKDOWN / PROCESSING
 # =========================
 
 markdown: kramdown
+highlighter: rouge
 
+# =========================
+# EXCLUDES
+# =========================
 
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
