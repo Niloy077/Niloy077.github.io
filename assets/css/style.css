@@ -442,12 +442,6 @@ body {
   scroll-margin-top: 80px;
 }
 
-#work-and-experience {
-  padding-top: 5px;
-  scroll-margin-top: 80px;
-}
-
-
 #work-experience {
   font-family: "geograph-medium", Arial, sans-serif;
   font-size: 42px;
@@ -484,6 +478,11 @@ body {
 /* =========================
    EDUCATION CARD (Home Page)
 ========================= */
+
+
+#education {
+  padding-top: 5px;
+}
 
 #education-title {
   font-family: "geograph-medium", Arial, sans-serif;
