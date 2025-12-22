@@ -130,7 +130,7 @@ layout: default
           class="edu-logo"
         /> -->
         <span class="edu-text">
-          B.Sc. Computer Science and Engineering<br />
+          B.Sc. in Computer Science and Engineering<br />
           <strong>North South University</strong>
         </span>
       </div>
