@@ -25,7 +25,7 @@ layout: default
 
         <div class="designation-card">
           <span class="designation-icon"></span>
-          <h3>ML Ops Enthusiast</h3>
+          <h3>MLOps Enthusiast</h3>
         </div>
 
         <div class="designation-card">
@@ -46,6 +46,51 @@ layout: default
     </div>
   </div>
 </section>
+
+<section class="projects" id="education">
+  <h2 id="education-title">Education</h2>
+
+  <div class="project-card scroll-target">
+    
+    <!-- LEFT IMAGE -->
+    <img
+      src="{{ '/assets/images/site_image/education.png' | relative_url }}"
+      alt="Education"
+    />
+
+    <!-- RIGHT CONTENT -->
+    <div class="project-text">
+
+      <!-- University Row -->
+      <div class="education-row">
+        <!-- <img
+          src="{{ '/assets/images/site_image/research.png' | relative_url }}"
+          alt="University Logo"
+          class="edu-logo"
+        /> -->
+        <span class="edu-text">
+          B.Sc. Computer Science and Engineering<br />
+          <strong>North South University</strong>
+        </span>
+      </div>
+
+      <!-- CAIE Row -->
+      <div class="education-row">
+        <!-- <img
+          src="{{ '/assets/images/site_image/research.png' | relative_url }}"
+          alt="CAIE Logo"
+          class="edu-logo"
+        /> -->
+        <span class="edu-text">
+          Cambridge Assessment International Education<br />
+          <strong>O Levels | A Levels</strong>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <section class="projects" id="work-and-experience">
   <h2 id="work-experience">Work Experience</h2>

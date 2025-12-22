@@ -280,6 +280,7 @@ body {
   /* replaces layout transforms */
 }
 
+
 /* TEXT */
 .hero-text {
   max-width: 500px;
@@ -345,8 +346,8 @@ body {
   background: rgba(255, 255, 255, 0.08);
 
   box-shadow:
-    0 0 0 1px rgba(76, 175, 80, 0.5),
-    0 10px 30px rgba(76, 175, 80, 0.25);
+    0 0 0 1px rgba(64, 162, 67, 0.5),
+    0 10px 30px rgba(58, 216, 63, 0.25);
 }
 
 
@@ -441,6 +442,12 @@ body {
   scroll-margin-top: 80px;
 }
 
+#work-and-experience {
+  padding-top: 5px;
+  scroll-margin-top: 80px;
+}
+
+
 #work-experience {
   font-family: "geograph-medium", Arial, sans-serif;
   font-size: 42px;
@@ -474,6 +481,69 @@ body {
       #ffd84d);
 }
 
+/* =========================
+   EDUCATION CARD (Home Page)
+========================= */
+
+#education-title {
+  font-family: "geograph-medium", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0 auto 60px;
+  width: fit-content;
+  position: relative;
+  color: #111;
+}
+
+#education-title::after {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: -12px;
+  height: 6px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #f5c400, #ffd84d);
+}
+
+/* Education rows */
+.education-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Logo box */
+
+
+/* Text */
+.edu-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.edu-text strong {
+  color: #001831;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .education-row {
+    margin-bottom: 18px;
+  }
+
+  .edu-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .edu-text {
+    font-size: 15px;
+  }
+}
 
 .projects {
   padding: 80px 60px;
@@ -939,6 +1009,49 @@ body {
     font-size: 14px;
   }
 }
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contact-sub {
+  color: #555;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-links a {
+  color: #001831;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  color: #4caf00;
+}
+
 
 /* FOOTER */
 .footer {
