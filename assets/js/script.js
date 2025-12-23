@@ -76,10 +76,11 @@ if (canvas) {
   canvas.addEventListener("mouseleave", () => (hover = false));
 
   const DPR = window.devicePixelRatio || 1;
-  const DOTS = 350;
-  const BASE_RADIUS = 120;
+  const DOTS = window.innerWidth >= 1600 ? 450 : 350;
   const ROTATION_SPEED = 0.002;
   const BRIGHT_RATIO = 0.15;
+
+  let BASE_RADIUS = 120; // default fallback
 
   let w, h, cx, cy;
 
@@ -93,6 +94,12 @@ if (canvas) {
     return palette[Math.floor(Math.random() * palette.length)]();
   };
 
+  function updateBaseRadius() {
+    const size = Math.min(w, h); // use smaller dimension
+    BASE_RADIUS = size * 0.38;   // ~38% of canvas size feels perfect
+    // Adjust if you want it fuller: 0.40–0.45, or tighter: 0.35
+  }
+
   function resize() {
     w = canvas.clientWidth;
     h = canvas.clientHeight;
@@ -103,10 +110,13 @@ if (canvas) {
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
     cx = w / 2;
     cy = h / 2;
+
+    updateBaseRadius();
   }
 
   window.addEventListener("resize", resize);
   resize();
+  updateBaseRadius();
 
   for (let i = 0; i < DOTS; i++) {
     const u = Math.random();
@@ -192,13 +202,13 @@ if (radarCanvas && window.Chart) {
       labels: isMobile
         ? ["Backend", "Web\nDev", "Python", "DB", "Cloud", "ML"]
         : [
-            "Backend / Java",
-            "Web Development",
-            "Python",
-            "Databases",
-            "Cloud & Tools",
-            "Machine Learning"
-          ],
+          "Backend / Java",
+          "Web Development",
+          "Python",
+          "Databases",
+          "Cloud & Tools",
+          "Machine Learning"
+        ],
       layoutPadding: isMobile ? 10 : isTablet ? 16 : 20,
       fontSize: isMobile ? 10 : isTablet ? 14 : 16,
       borderWidth: isMobile ? 2 : 3,

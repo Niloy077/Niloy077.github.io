@@ -387,13 +387,6 @@ body {
   overflow: hidden;
 }
 
-/* scale with screen */
-@media (min-width: 1600px) {
-  .hero-globe {
-    width: 420px;
-    height: 420px;
-  }
-}
 
 /* canvas */
 #globe {
@@ -1095,7 +1088,7 @@ h3 {
 
   /* Offset for fixed navbar */
   body {
-    padding-top: 64px;
+    padding-top: 44px;
   }
 
   #home {
@@ -1394,6 +1387,7 @@ h3 {
   .hero-designations {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+    justify-content: center;
   }
 
   /* GLOBE */
@@ -1486,5 +1480,87 @@ h3 {
   /* Stop live indicator ripple (saves CPU) */
   .live-indicator::before {
     animation: none !important;
+  }
+}
+
+
+/* Extra-large screens – make hero feel bigger and more spacious */
+@media (min-width: 1800px) {
+  .hero {
+    padding: 100px 140px 80px;
+    /* more vertical and horizontal breathing room */
+  }
+
+  .hero-content {
+    gap: clamp(120px, 12vw, 240px);
+    /* lets gap grow with viewport */
+    max-width: 1600px;
+    /* optional: center and limit total width */
+    margin: 0 auto;
+    /* centers the content on ultra-wide screens */
+  }
+
+  .hero-text {
+    max-width: 720px;
+    /* allow text block to expand */
+  }
+
+  .hero-text h1 {
+    font-size: 82px;
+    /* bigger name */
+    margin-bottom: 28px;
+  }
+
+  .hero-text p {
+    font-size: 26px;
+    /* bigger description */
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .hero-globe {
+    width: 520px;
+    height: 520px;
+    /* significantly larger globe */
+  }
+
+  .hero-designations {
+    margin-top: 5rem;
+    gap: 1.8rem;
+  }
+
+  .designation-card {
+    min-width: 220px;
+    padding: 1.4rem 1.6rem;
+  }
+
+  .designation-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Optional: even larger on true 4K+ monitors */
+@media (min-width: 2400px) {
+  .hero-text h1 {
+    font-size: 96px;
+  }
+
+  .hero-text p {
+    font-size: 28px;
+  }
+
+  .hero-globe {
+    width: 600px;
+    height: 600px;
+  }
+
+  .hero-content {
+    gap: clamp(200px, 15vw, 320px);
   }
 }
