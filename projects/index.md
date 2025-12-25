@@ -159,6 +159,15 @@ title: Projects
       >
         View on GitHub →
       </a>
+
+      <a
+        href="https://regippi-bylvxuy9q8edt8s5vcyejt.streamlit.app/"
+        target="_blank"
+        rel="noopener"
+        class="project-link"
+      >
+        Test Live →
+      </a>
     </article>
 
     <article class="work-card project-card">

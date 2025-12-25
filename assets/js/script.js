@@ -4,14 +4,18 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     const targetId = this.getAttribute("href");
-    const target = document.querySelector(targetId);
 
+    // 🚫 ignore empty hash links (like Profiles toggle)
+    if (targetId === "#") return;
+
+    const target = document.querySelector(targetId);
     if (!target) return;
 
     e.preventDefault();
     target.scrollIntoView({ behavior: "smooth" });
   });
 });
+
 
 /* =========================
    MOBILE NAV
@@ -24,10 +28,22 @@ if (toggle && nav) {
     nav.classList.toggle("active");
   });
 
-  document.querySelectorAll("#nav-menu a").forEach(link => {
+  document.querySelectorAll("#nav-menu > a").forEach(link => {
     link.addEventListener("click", () => {
       nav.classList.remove("active");
     });
+  });
+
+}
+
+/* Prfile toggle */
+const profilesToggle = document.querySelector("#profiles-toggle");
+
+if (profilesToggle) {
+  profilesToggle.addEventListener("click", (e) => {
+    e.preventDefault();       // 🚫 no page jump
+    e.stopPropagation();      // 🚫 don’t trigger nav close
+    profilesToggle.parentElement.classList.toggle("open");
   });
 }
 
